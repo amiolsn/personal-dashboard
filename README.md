@@ -4,6 +4,7 @@ JavaScript, HTML, CSSで作成したパーソナライズ・ダッシュボー�
 
 ## 🚀 デモ
 (https://amiolsn.github.io/personal-dashboard/)
+APIは各自で取得して設定してください。
 
 ## ✨ 主な機能
 - **天気予報**: OpenWeatherMap APIを使用し、リアルタイムの天気を表示。
