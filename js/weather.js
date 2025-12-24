@@ -1,5 +1,5 @@
 //1.APIキーとベースURLの設定
-const API_KEY = 'd44138898b079f960cd2d88106c947d5';  //取得したAPIキーを入れる
+const API_KEY = CONFIG.OPENWEATHER_API_KEY; // API_KEYを直接書かず、CONFIGから読み込む
 const CITY = 'Okinawa';
 const URL =`https://api.openweathermap.org/data/2.5/weather?q=${CITY}&appid=${API_KEY}&units=metric&lang=ja`;
 
