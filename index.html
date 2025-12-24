@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+<body>
+  <div class="container">
+    <header class="header-section">
+      <h1 id="clock">00:00:00</h1>
+      <p id="greeting">Loading...</p>
+    </header>
+
+    <main>
+      <section class="weather-card">
+        <div class="card-header">
+          <i class="fa-solid fa-location-dot"></i>
+          <span id="city-name">Okinawa</span>
+        </div>
+        <div class="weather-main">
+          <img id="weather-icon" src="" alt="">
+          <h2 id="temp">--℃</h2>
+        </div>
+        <p id="weather-desc">Fetching weather...</p>
+      </section>
+
+      <section class="todo-card">
+        <h3>
+          <i class="fa-solid fa-list-check"></i>
+          Today's Tasks
+        </h3>
+        <form id="todo-form">
+          <input type="text" id="todo-input" placeholder="新しいタスクを入力..." required>
+          <button type="submit"><i class="fa-solid fa-plus"></i></button>
+        </form>
+        <ul id="todo-list"></ul>
+      </section>
+    </main>
+
+    <footer class="quote-section">
+      <p id="quote">"Stay humgry, stay foolish."</p>
+    </footer>
+  </div>
+
+  <script src="js/weather.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
